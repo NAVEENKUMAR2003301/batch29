@@ -156,6 +156,333 @@ console.error(100)
 console.clear()
 
 
+// DataTypes
+
+// 1. primitive DataType
+
+// 1. string - "123" 
+
+let name1 = "navi"
+
+console.log((name1));
+
+
+// 2. number - 123
+
+let num = 123
+
+console.log(typeof(num));
+
+
+// 3. boolean - true , false
+
+let isHave = false
+
+console.log(typeof(isHave));
+
+
+// 4. undefined
+
+let all ;
+
+console.log(all);
+
+
+// 5. null - 0 
+
+// let name2 = prompt()
+
+// console.log(name2);
+
+
+
+
+
+
+// 2. non primitive DataType 
+
+// 1. Array - indexing
+
+// syntex - []
+
+let fruit = ["giwi","apple","banana","orange","graphs","cherry","hjhjhj"]
+
+console.log("array");
+
+console.log(fruit);
+console.log(fruit[0]);
+console.log(fruit[3]);
+
+console.log(fruit[0]);
+console.log(fruit[fruit.length-1]);
+
+
+
+// 2. object - doted notation
+
+// syntex - {}
+
+
+let fruitDetials = {
+    redFruit    : ["apple","cherry"],
+    greenFruit  : ["giwi","graphs"] ,
+    yellowFruit : "banana",
+    notFruit    : "hjhjhj"
+}
+
+console.log(fruitDetials);
+
+console.log(fruitDetials.yellowFruit);
+console.log(fruitDetials.notFruit);
+console.log(fruitDetials.greenFruit[1]);
+console.log(fruitDetials.redFruit[0]);
+
+console.clear();
+
+
+
+// operators
+
+// 1. Arithmetic operator - methamatical 
+
+// addition       +
+
+// subraction     -
+
+// multiplication *
+
+// division       /
+
+// modulus        %
+
+// exponencial    **
+
+
+console.log(1 + 1);
+console.log(1 - 1);
+console.log(1 * 1);
+console.log(10 / 2);
+console.log(9 % 10);
+console.log(2 ** 3); // 2^3 = 2*2*2 = 8
+
+// Increament ++ = +1
+
+// --> 1. pre inc = ++var , 2. post inc = var++
+
+
+// Decreament -- = -1
+
+// --> 1. pre Dec = --Var , 2. post Dec = Var--
+
+
+
+// Example :- 
+
+let num1 = 2
+
+num1--
+
+console.log("num1 :- ", num1);
+
+
+
+let num3 = 2       // 
+
+let num4 = num3++  // 
+
+console.log("num3 : - ", num3);  // num3 :- 3
+console.log("num4 : - ", num4);  // num4 :- 2
+
+
+
+// if you search element first find in variable side , you can calculate that value side till the variable.
+
+let num2 = 2      // null
+
+    num2 = ++num2
+
+    console.log("num2 :- ", num2); // num2 : - 3
+
+
+
+// if you search element first find in value side , you can calculate that value side entaire.
+// final Example :- 
+
+
+let num5 = 3     // 
+
+let num6 = --num5 // --num5 = -1+3 =2
+
+let num7 = ++num6 // ++num6 = ++2 = 3
+
+
+console.log("num5 :- ",num5);  // 2 , 3  // num5 :- 2
+console.log("num6 :- ",num6);  // 2      // num6 :- 3
+console.log("num7 :- ",num7);  // 3      // num7 :- 3
+
+
+
+    
+
+
+// 2. Assignment operator
+
+
+let number1 = 10
+let additionVal = 100
+
+    // number1 = number1 + additionVal 
+
+    number1 %= additionVal
+
+    console.log("number1 :- ",number1);
+    
+
+// 3. Relational or comparision operator
+
+//  lessThen        <       (5<5)      false
+
+//  greaterThen     >       (15>5)     true
+
+// lessThenEq       <=      (5<=5)     true
+
+// greaterThenEq    >=      (15>=0.15)  true
+
+// loosyTypeEq      ==      (5 == "5") true
+
+// loosyNotEq       !=      (5 != "0.5") true
+
+// strictlyTypeEq   ===     (5 === 50)  false
+
+// strictlyNotEq    !==     (5 !== 5)  false
+
+
+// example
+
+
+console.log(5 === "5"); // false
+console.log(5 == "5");  // true
+console.log(5 !== "5"); // true
+console.log(5 >= 56);   // false 
+console.log(5 != 89);   // true
+console.log(5 >= 0.8);  // true
+
+
+
+// 4. logical operator
+
+// 1. AND operator   - &
+
+
+// true & true & true = true 
+
+// false & true & true = false
+
+
+
+// 2. OR operator    - ||
+
+// true || false || false = true 
+
+// false || false || false = false
+
+
+
+
+// 3. Not operator   - !
+
+// !(true) = false 
+
+// !(false) = true
+
+
+// Example :- 
+
+console.log(10===10 & 2>4 & 5=="5"); // false
+
+//  true & false & true = false
+
+console.log(10=="101" || 5>3 || 6<90); // true
+
+// false || true || true  = true
+
+
+console.log(!(5==="5")); // true
+
+// !(false) = true
+
+
+console.log(!(5==="51") & 8>=8 || 90>=90); // true
+
+// !(5==="51") = true & true = true  || true = true
+
+
+
+// 5 . Ternary operator
+
+// syntex 
+
+
+// condition ? "statement" : "statement" 
+
+
+// example :- 
+
+
+5!==5 ? console.log("true") : console.log("false");
+
+
+console.clear();
+
+// concatination - (+)
+
+let n1 = "iron"
+let n2 = "man"
+
+console.log(n1 +" "+ n2);
+
+
+// Template String - ``
+
+let n3 = "spider"
+let n4 = "man"
+
+console.log(`${n3} ${n4}`);
+
+
+
+// ternary operator
+
+
+// condition ? "statement" : "statement";
+
+
+let pwd = 1
+
+pwd ? console.log("enter the home page") : console.log("your password is wrong");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 3. function 
+
+// 4. date
+
+
+
 
 
 
