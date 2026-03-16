@@ -462,6 +462,324 @@ let pwd = 1
 pwd ? console.log("enter the home page") : console.log("your password is wrong");
 
 
+console.clear();
+
+
+// Type Conversion 
+
+// 1. implicit Type Conversion
+
+console.log(typeof("hello" + 1));
+
+// String - (string anything String)
+
+console.log(typeof("1" + "1"));
+console.log(typeof("1" + 1));
+console.log(typeof("1" + true));
+console.log(typeof("1" + undefined));
+console.log(typeof("1" + null));
+
+console.log(typeof("1" + [1,2]));
+console.log(typeof("1" + {k:1}));
+
+// number 
+
+console.log(typeof(1 + "1"));
+console.log(typeof(1 + 2));
+console.log(typeof(1 + true));
+console.log(typeof(1 + undefined)); // NaN = 0 --> number
+console.log(typeof(1 + null));
+
+console.log(typeof(1 + [1,2,3]));
+console.log(typeof(1 + {g:4}));
+
+// boolean 
+
+console.log(typeof(true + "1"));
+console.log(typeof(true + 2));
+console.log(typeof(true + true));
+console.log(typeof(true + undefined));
+console.log(typeof(true + null));
+
+console.log(typeof(true + [1,2,3]));
+console.log(typeof(true + {k:9}));
+
+console.clear();
+
+
+// 2. Explicit Type Conversion
+
+
+
+// Constractor
+
+// Number Constractor
+
+console.log(1 + Number("1"));
+
+
+console.log(Number());
+console.log(Number(""));
+console.log(Number("123"));
+console.log(Number("abc"));
+console.log(Number(123));
+console.log(Number(-1));
+console.log(Number(true));
+console.log(Number(false));
+console.log(Number(undefined));
+console.log(Number(null));
+
+console.log(Number([123,45,56]));
+console.log(Number({k:9}));
+
+// Boolean 
+
+console.log(Boolean());
+console.log(Boolean(""));
+console.log(Boolean("123"));
+console.log(Boolean("abc"));
+console.log(Boolean(123));
+console.log(Boolean(-1));
+console.log(Boolean(0));
+console.log(Boolean(true));
+console.log(Boolean(false));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+
+console.log(Boolean([1,2]));
+console.log(Boolean({l:1}));
+
+
+
+console.clear();
+
+
+// Flow Control Statement
+
+// 1. conditional statement
+
+// if statement
+
+//  if(condition){// statement}
+
+// condition true = allow
+
+// example :- 
+
+if(5=="5"){
+
+    console.log("hello");
+    
+}
+
+// if - else statement
+
+// condition true = if inside allow , false = else inside allow
+
+// example
+
+if(0){
+    console.log("condition true");
+    
+}else{
+    console.log("condition false");
+    
+}
+
+
+// else if statement 
+
+
+// let hour = prompt("enter current time use time format : 24hrs")
+
+// if(hour >= 1 && hour <= 12){
+//     alert("Good morning");
+    
+// }else if(hour >= 13 && hour <= 15){
+//     alert("Good Afternoon");
+    
+// }else if(hour >= 16 && hour <= 18){
+//     alert("Good Evening");
+    
+// }else{
+//     alert("Good Night");
+    
+// }
+
+
+// nested if Statement
+
+// police selection creteria.. # age , # height , # weight
+
+// let namee = prompt("enter your name :-")
+// let age   = prompt("enter your age :-")
+// let height = prompt("enter your height :- (cm)")
+// let weight = prompt("enter your weight :- (kg)")
+
+
+// if(age >= 18){
+
+//     if(height >= 150){
+
+//         if(weight >= 50){
+//               alert(`${namee} , congradulation your selected!!!`);
+              
+//         }else{
+//             alert(
+//               `${namee} your weight is :- ${weight} kg. basic creteria 50 kg.`
+//             );
+//         }
+
+//     }else{
+//         alert(
+//           `${namee} your height is :- ${height} cm. basic creteria 150 cm.`
+//         );
+//     }
+
+// }else{
+//     alert(`${namee} your age is :- ${age} old. basic creteria 18 age old.`);
+    
+// }
+
+
+
+// Looping statement
+
+// for loop
+
+// for(intialization ; condition ; iteration ){
+
+//     // statement
+
+// }
+
+
+// example  :- 
+
+// 1 to 5
+
+
+for(let i = 1 ; i <= 5 ; i++){
+
+    console.log(i); // 1 2 3 4 5
+    
+}
+
+// i = 1 ; 1 <= 5 = true ; 1++ = 2
+// i = 2 ; 2 <= 5 = true ; 2++ = 3
+// i = 3 ; 3 <= 5 = true ; 3++ = 4
+// i = 4 ; 4 <= 5 = true ; 4++ = 5
+// i = 5 ; 5 <= 5 = true ; 5++ = 6
+// i = 6 ; 6 <= 5 = false .
+
+
+for(let i = 1 ; i <= 3 ; i++){
+    for(let j=1; j <= 5 ; j++){
+        console.log(j);
+        
+    }
+}
+
+console.clear();
+
+
+// while loop
+
+
+// intialization 
+
+// while(condition){
+//     // statement 
+
+//     iteration
+// }
+
+
+// let intial = Number(prompt("enter number :- "))
+
+// while(intial){
+//     console.log(intial);
+
+//     intial--
+    
+// }
+
+
+
+// do while loop 
+
+// intialization 
+
+// do {
+//     // statement 
+//     iteration
+// }
+// while(condition)
+
+
+let in1 = 10
+
+do{
+    console.log(in1);
+    in1--
+    
+}
+while(in1>=30)
+
+
+
+
+
+// for of loop - array ,string , function
+
+let str = "javascript"
+let array = ["apple","orange","banana"]
+
+for(let a of str){
+
+    console.log(a);
+    
+}
+
+
+for(let b of array){
+    console.log(b);
+    
+}
+
+
+
+// for in loop - object
+
+let object = {
+    name1 : "ben",
+    role : "developer",
+    salary : 100000
+}
+
+for(let a in object){
+    console.log(object[a]);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 2. looping statement
+
+
+
 
 
 
