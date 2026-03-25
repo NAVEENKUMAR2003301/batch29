@@ -1528,24 +1528,260 @@ console.log(arr12.toString());
 
 console.log(arr12.join("hello"));
 
+console.clear();
+
+
+// String Methods 
+
+// charAt(), index --> character
+
+let str = "javascript"
+
+console.log(str.charAt(2));
+
+
+
+// charCodeAt(), index  --> asscii value
+
+console.log(str.charCodeAt(1));
+
+
+
+// length, 
+
+
+console.log(str.length);
 
 
 
 
+// slice(si,ei + 1), 
+
+str = "javaSCript";
+
+console.log(str.slice(1,5));
 
 
 
 
+// toUpperCase(), 
+
+console.log(str.toUpperCase());
+
+
+// toLowerCase(), 
+
+console.log(str.toLowerCase());
+
+// trim(), 
+
+
+let str1 = " hello "
+
+console.log(str1.trimEnd());
+
+
+// includes(),
+
+let str2 = "jdhfgsa"
+
+console.log(str2.includes("D"));
+
+
+// indexOf(), 
+
+let str4 = "hello world"
+
+console.log(str4.indexOf("l",4));
+
+// lastIndexOf()
+
+console.log(str4.lastIndexOf("l",8));
+
+
+
+// replace(), 
+
+
+// console.log(str5.replace("python","javascript"));
+
+
+
+// repeat()
+
+let str6 = "hello"
+
+console.log(str6.repeat(2));
 
 
 
 
+// startsWith(), 
+
+str6 = "hello";
+
+console.log(str6.startsWith("H"));
 
 
 
+
+// endsWith()
+
+
+console.log(str6.endsWith("o"));
+
+
+// split(), 
+
+
+let str7 = "spider-man"
+
+console.log(str7.split("-"));
+
+
+
+let str5 = "python python developer"
+
+
+console.log(str5.split(" ")[1].replace("python","javascript"));
+
+
+
+console.clear();
 
 
 // // 4. date
+
+
+let date1 = new Date()
+console.log(date1);
+
+// get
+
+// getFullYear()
+
+console.log(date1.getFullYear());
+
+
+// getDate()
+
+console.log(date1.getDate());
+
+// getMonth()
+
+console.log(date1.getMonth());
+
+// getDay()
+
+console.log(date1.getDay());
+
+
+// getHours
+
+console.log(date1.getHours());
+
+// getMinutes
+
+console.log(date1.getMinutes());
+
+
+// getSeconds
+
+console.log(date1.getSeconds());
+
+
+// local string
+
+
+// time
+
+console.log(date1.toLocaleTimeString());
+
+
+// date 
+
+console.log(date1.toLocaleDateString());
+
+
+console.log(date1.toLocaleString());
+
+console.clear();
+
+
+
+// set
+
+let allData = new Date()
+
+console.log(allData);
+
+allData.setFullYear(2003)
+
+console.log(allData);
+
+
+allData.setDate(30)
+
+console.log(allData);
+
+
+allData.setMonth(0)
+
+console.log(allData);
+
+allData.setHours(12)
+
+console.log(allData);
+
+allData.setMinutes(12)
+
+console.log(allData);
+
+allData.setSeconds(12)
+
+console.log(allData);
+
+console.clear();
+
+
+// example 
+
+
+// birth day (day) finder 
+
+
+let year = prompt("enter you birthday year")
+let month = prompt("enter your birthday month use number")
+let date  = prompt("enter birth day date")
+
+
+let rawdata = new Date()
+
+rawdata.setFullYear(year)
+rawdata.setMonth(month-1)
+rawdata.setDate(date)
+
+console.log(rawdata);
+
+let weekNum = (rawdata.getDay())
+
+let weekDays = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
+
+alert(weekDays[weekNum]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
